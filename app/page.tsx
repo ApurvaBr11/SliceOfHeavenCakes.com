@@ -47,7 +47,7 @@ export default function Home() {
   const { changeMode } = usesidebartoggle((state) => state);
 
   return (
-    <main className=" bg-black text-white p-5 relative main">
+    <main className=" bg-black text-white md:p-5 p-2  relative main">
       <button onClick={changeMode} className="mb-[300px]">
         Toggle
       </button>
@@ -75,7 +75,7 @@ export default function Home() {
           error inventore distinctio.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center ">
         <div className=" overflow-hidden " ref={ref}>
           <Image
             src={

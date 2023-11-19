@@ -39,12 +39,12 @@ const HomeContent = () => {
   }, []);
 
   return (
-    <div >
-      <div className="text-slide pt-32 relative">
-        <div className="w-[120%] absolute -left-20 h-20 bg-violet-900 rotate-6 shadow-2xl font-bold text-7xl">
+    <div  className=" relative md:top-0 -top-96">
+      <div className="text-slide md:pt-32  relative">
+        <div className="md:w-[120%] w-[160%]  absolute -left-20 md:h-20 h-10 bg-violet-900 md:mb-0 rotate-6 shadow-2xl font-bold text-xl md:text-7xl">
           <div
             ref={textslideback}
-            className="flex gap-6 items-center justify-center h-full"
+            className="flex md:gap-6 gap-2 items-center justify-center h-full"
           >
             <p>ULTIMATE</p>
             <p>ULTIMATE</p>
@@ -57,10 +57,10 @@ const HomeContent = () => {
             <p>ULTIMATE</p>
           </div>
         </div>
-        <div className="w-[120%] absolute -left-20 h-20 bg-violet-600 -rotate-6 shadow-2xl text-7xl  font-bold">
+        <div className="md:w-[120%] w-[160%] absolute -left-20 md:h-20 h-10 bg-violet-600 -rotate-6 shadow-2xl text-xl md:text-7xl font-bold">
           <div
             ref={textslide}
-            className="flex gap-6 items-center justify-center h-full"
+            className="flex md:gap-6 gap-2 items-center justify-center h-full"
           >
             <p>TASTE</p>
             <p>TASTE</p>
@@ -74,7 +74,7 @@ const HomeContent = () => {
             <p>TASTE</p>
           </div>
         </div>
-        <div ref={imageSlide} className="flex px-9 mt-60 relative h-[700px]">
+        <div ref={imageSlide} className="md:flex hidden px-9 mt-60 relative h-[700px]">
           <Image
             className="rounded absolute "
             src={
