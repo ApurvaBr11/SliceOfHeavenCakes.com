@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*::selection{
+  background: #00000000;
+  color: white;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 2px;

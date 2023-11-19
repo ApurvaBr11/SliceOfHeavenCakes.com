@@ -61,7 +61,7 @@ const GridBox = () => {
   return (
     <div
       ref={main}
-      className=" h-[1050px] grid grid-cols-4 grid-rows-4 gap-4 "
+      className=" md:flex md:flex-col sm:flex sm:flex-col h-[1050px] lg:grid grid-cols-4 grid-rows-4 gap-4 "
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
